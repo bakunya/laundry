@@ -1,0 +1,78 @@
+.container-list {
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+ul li:nth-child(odd) {
+    background-color: #e8e8e8;
+    border-radius: 10px;
+}
+
+li h1 {
+    font-family: "IBM-Medium";
+    font-size: 1.3rem;
+    margin: 10px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #37525d;
+}
+
+ul div {
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    width: 80%;
+    margin: 10px auto;
+}
+
+ul div span {
+    margin: 5px;
+}
+
+.container-list .print,
+button#back {    
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    display: block;
+    margin-left: auto;
+    width: auto;
+    background-color: #bbe1fa;
+    border-radius: 10px;
+    color: black;
+    font-family: 'IBM-Medium';
+    -webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.28);
+    -moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.28);
+    box-shadow: 2px 2px 3px 0px rgb(0 0 0 / 46%);
+    transition: 200ms;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+button#back {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+.container-list .print:hover,
+.container-list .print:active,
+.container-list .print:focus,
+button#back:hover,
+button#back:active,
+button#back:focus {
+    box-shadow: none;
+}
+
+.alamat {flex-direction: column;}
+.alamat span:last-child {text-align: center;}

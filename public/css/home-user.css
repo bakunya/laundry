@@ -1,0 +1,112 @@
+main {
+    width: 100vw;
+    max-width: 800px;
+    margin: auto;
+}
+
+.card-container {
+    padding: 20px 10px;
+}
+
+.card-body {
+    border: none !important;
+    transition: ease-in-out 300ms;
+}
+
+.card-header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.card-header img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+.title {
+    color: gray;
+}
+
+.title,
+.subtitle {
+    margin: 5px;
+    font-family: "IBM-Bold";
+    font-size: 1rem;
+}
+
+.body {
+    padding: 10px 20px 20px 20px;
+}
+
+.body p {
+    font-size: 1.7rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "IBM-Medium";
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.status span {
+    margin: 5px;
+}
+
+.status svg {
+    margin: 5px;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.link a {
+    text-transform: uppercase;
+    margin: 5px;
+    color: black;
+    font-family: "IBM-Medium";
+    display: inline-block;
+    transition: transform ease-in-out 200ms;
+}
+
+.link a:hover,
+.link a:active {
+    transform: scale(1.1);
+}
+
+.link a.convert {color: gray;}
+
+.footer {
+    margin: 10px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+a.filter {
+    margin: 20px 10px;
+    display: inline-block;
+    padding: 10px;
+    background-color: #bbe1fa;
+    color: black;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 0px rgb(0 0 0 / 46%);
+    transition: 200ms ease-in-out;
+}
+
+a.filter:hover,
+a.filter:active,
+a.filter:focus {box-shadow: none;}
+
+.input-container {
+    margin: 20px 10px;
+    max-width: 400px;
+}

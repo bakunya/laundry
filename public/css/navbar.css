@@ -1,0 +1,235 @@
+body {
+    /* background-image: url(http://localhost/laundry/public/img/202.jpg);
+    background-size: cover;
+    background-position: center; */
+    overflow: initial;
+}
+
+button,
+.nav-close .close,
+.close {
+    -webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.28);
+    -moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.28);
+    box-shadow: 2px 2px 3px 0px rgb(0 0 0 / 46%);
+    height: auto;
+    transition: 200ms;
+}
+
+#sidebar a:hover,
+nav a:hover {
+    transform: scale(1.1);
+}
+
+#sidebar a,
+nav a {
+    transition: transform 200ms ease-in-out !important;
+}
+
+nav {
+    padding: 10px 15px;
+    background-color: #bbe1fa;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 99;
+}
+
+nav .menu {
+    display: none;
+}
+
+nav a {
+    color: black;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    transition: color 300ms;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    font-family: "IBM-Medium";
+}
+
+nav a img {
+    margin-left: 5px;
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+nav h1 {
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    font-family: "IBM-Bold";
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+nav .logo {
+    text-decoration: none;
+}
+
+.menu-button {
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    width: auto;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 200ms ease-in-out;
+}
+
+.menu-button img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.menu-button:active,
+.menu-button:focus {
+    box-shadow: none;
+}
+
+#sidebar,
+#settings{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: #bbe1fa;
+    align-items: center;
+    z-index: 888;
+    transition: transform 400ms ease-in-out;
+    transform: translateY(-999px);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#sidebar .items {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#sidebar .items .manajemen {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#sidebar .items .transaksi {
+    display: flex;
+    justify-content: end;
+}
+
+#sidebar a {
+    color: black;
+    margin: 20px;
+    text-align: right;
+    font-family: "IBM-Medium";
+    text-transform: capitalize;
+}
+
+#sidebar > .nav-close .close,
+#sidebar > .close {
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#sidebar .logout{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logout svg {
+    margin: 0 5px;
+}
+
+.logout svg,
+#sidebar > .nav-close .close svg,
+#sidebar > .close svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.nav-close {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.nav-close::before {
+    content: "";
+    width: 100%;
+    border-bottom: 1px solid black;
+    position: absolute;
+    top: 0;
+}
+
+#sidebar img {
+    margin-right: 10px;
+}
+
+.visible {
+    transform: translateY(0) !important;
+}
+
+@media screen and (max-width: 550px) {
+    #sidebar .items .transaksi {
+        display: flex;
+        width: 50%;
+        align-items: baseline;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .menu-button {
+        display: none;
+    }
+
+    nav .menu {
+        display: flex;
+        align-items: center;
+    }
+
+    nav .menu > * {
+        margin: 0 10px;
+    }
+
+    nav .logout > svg {
+        margin: 0 5px;
+    }
+
+    .active::after {
+        content: "";
+        border-bottom: 2px solid #2f2f2f;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    nav a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a.logout { flex-direction: row; }
+}

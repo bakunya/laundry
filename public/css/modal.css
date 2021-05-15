@@ -1,0 +1,49 @@
+.container-modal {
+    position: fixed;
+    display: grid;
+    place-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity ease-in-out 400ms;
+    z-index: 999;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    place-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 15% 1fr 15%;
+    padding: 10px;
+    gap: 10px;
+}
+
+.close-modal {
+    width: fit-content;
+    width: -moz-fit-content;
+    background-color: #dc3545!important;
+    outline: none;
+    color: white;
+    margin-left: auto;
+}
+
+@media screen and (min-width: 800px) {
+    .modal {
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+    }
+}

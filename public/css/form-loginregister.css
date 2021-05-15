@@ -1,0 +1,215 @@
+.container-login {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 100%;
+    /* background-image: url(/img/nature.svg); */
+    /* background-size: cover; */
+    /* background-position: center; */
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+form {
+    margin-bottom: 10px;
+}
+
+form > h1 {
+    margin: 10px 0;
+    padding: 10px;
+    padding-bottom: 0;
+    font-family: "IBM-Bold";
+    text-align: center;
+    font-size: 1.3rem;
+    color: rgb(58, 58, 58);
+    display: initial;
+    text-transform: capitalize;
+}
+
+form.auth::before {
+    content: "";
+    z-index: 999;
+    background-image: url(http://localhost/laundry/public/img/male.svg);
+    display: block;
+    height: 80px;
+    width: 80px;
+    background-position: center;
+    background-size: cover;
+    margin: auto auto 10px auto;
+}
+
+.input-container {
+    padding: 10px;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.input-container img {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.input-container > input,
+.input-container > select {
+    outline: none;
+    border: none;
+    margin: 0 5px;
+    width: 100%;
+    background-color: #fff;
+    font-size: 1rem;
+}
+
+.input-container > img.show-password {
+    margin-left: auto !important;
+    cursor: pointer;
+}
+
+form > button {
+    width: 100%;
+    margin-top: 35px;
+    padding: 5px;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    background-color: #b5bbdb;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    transition: background-color 300ms;
+    cursor: pointer;
+    -webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.28);
+    -moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.28);
+    box-shadow: 2px 2px 3px 0px rgb(0 0 0 / 46%);
+}
+
+form > button:hover,
+form > button:active,
+form > button:focus {
+    background-color: #777bd5;
+}
+
+.info {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.info > * {
+    text-align: center;
+    padding: 5px;
+}
+
+.info a,
+.info p {
+    color: #777bd5;
+    font-family: "IBM-Bold";
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.info p {
+    color: rgb(58, 58, 58);
+}
+
+.info > a {
+    display: block;
+    transition: ease-in-out 300ms color;
+}
+
+.info a:hover,
+.info a:active,
+.info a:focus {
+    color: #4e529c;
+}
+
+/* .input-active {
+    border: 1px solid black;
+    border-radius: 10px;
+} */
+
+
+@media screen and (min-width: 600px) {
+    * {
+        font-size: 20px;
+    }
+
+    .container-login {
+        width: 100%;
+        height: 100%;
+        background-image: url(http://localhost/laundry/public/img/cuci.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .container-login::after {
+        content: "";
+        background-color: rgba(0,0,0,0.1);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    aside img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .container-form {
+        display: flex;
+        flex-direction: column;
+        background: transparent;
+        width: auto;
+        height: auto;
+        background-color: #fff;
+        z-index: 3;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.30);
+        margin-right: 50px;
+    }
+
+    form.auth::before {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    /* RESET FORM REGISTER */
+    form#register {
+        display: grid;
+        grid-template-areas:
+            "login login"
+            "avatar avatar"
+            "name email"
+            "password repassword"
+            "button button";
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+    form#register::before {grid-area: login;}
+
+    form#register h1 {
+        grid-area: avatar; 
+        margin: 0; 
+        padding: 0;
+    }
+
+    form#register button {
+        grid-area: button;
+        margin: 0;
+    }
+}

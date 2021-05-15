@@ -1,0 +1,173 @@
+.main-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 1.5rem;
+    font-family: 'IBM-Regular';
+    margin-bottom: 0;
+}
+
+span {font-size: 1.5rem;}
+
+.main-container a,
+button {
+    transition: 200ms ease-in-out;
+    border-radius: 10px;
+    width: 70px;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    display: grid;
+    place-content: center;
+    -webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.28);
+    -moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.28);
+    box-shadow: 2px 2px 3px 0px rgb(0 0 0 / 46%);
+}
+
+button:focus, 
+a:focus {border: 1px solid black;}
+
+button:hover,
+button:active,
+.close:hover,
+.close:active,
+a:hover,
+a:active {box-shadow: none;}
+
+form > button:hover,
+form > button:active,
+form > button:focus {
+    background-color: #007bff;
+}
+
+.tambah {
+    box-sizing: content-box;
+    margin: 10px;
+    background-color: #bbe1fa;
+    display: inline-block;
+    color: black;
+}
+
+.input-container {
+    margin: 10px;
+    margin-bottom: 40px;
+    width: 300px;
+    max-width: 500px;
+}
+
+.list-container {
+    margin: 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3 {
+    text-align: left;
+    width: 100%;
+    font-weight: normal;
+    font-size: 1.4rem;
+}
+
+.action {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.detail {
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: 0 10px;
+    margin-left: auto;
+    background-color: #007bff;
+    color: white;
+}
+
+.edit {
+    width: fit-content;
+    width: -moz-fit-content;;
+    margin-right: 10px;
+    background-color: #ffc107;
+    color: white;
+}
+
+.delete{
+    width: fit-content;
+    width: -moz-fit-content;;
+    background-color: #dc3545!important;
+    outline: none;
+    color: white;
+}
+
+.modal-title h1 {
+    text-align: center;
+    color: gray;
+}
+
+.input-container {
+    position: relative;
+}
+
+form p {    
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.6rem;
+    padding: 0;
+    margin: 10px;
+    color: #dc3545;
+    margin-top: -19px;
+}
+
+#detail .modal-body {
+    height: fit-content;
+    height: -moz-fit-content;
+    width: 100%;
+    max-height: 80vh;
+    max-width: 80vw;
+}
+
+#detail img {
+    display: block;
+    margin: auto;
+}
+
+#detail p {margin: 10px;}
+#detail p > span {font-size: 2.5rem;}
+ul {margin: 10px;margin-top: 20px;}
+
+span.id {font-size: 0.8rem; color: gray; text-align: center; display: block; margin-bottom: 10px;}
+
+.filter {
+    display: initial !important;
+    color: black;
+}
+
+@media screen and (min-width: 800px) {
+    form {
+        display: grid;
+        grid-template-areas:
+            "outlet kiloan"
+            "harga service"
+            "kosong button";
+    }
+
+    form button {
+        grid-area: button;
+        margin: 0;
+        background-color: #007bff;
+        color: white;
+    }
+
+    .input-container { margin-bottom: 20px; }
+    .list-container {flex-direction: row;}
+}

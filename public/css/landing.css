@@ -1,0 +1,243 @@
+main {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+#landing {position: relative;}
+
+#full-discount {
+    display: grid;
+    place-content: center;
+    background: #93d5ff;
+}
+
+#full-discount > * {font-family: "IBM-Medium";}
+#full-discount h1.diskon {font-size: 3rem;}
+#full-discount h1.jumlah {font-size: 6rem; color: white;}
+
+#full-discount p.detail {
+    font-size: 2rem;
+    text-align: center;
+}
+#full-discount p.date {
+    margin: 15px;
+    font-size: 0.9rem;
+    text-align: right;
+}
+
+main img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: center;
+}
+
+p.outlet {
+    font-size: 1.7rem;
+    font-family: 'IBM-Medium';
+    color: gray;
+}
+
+h1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1 span a {
+    padding: 0;
+    margin: 0;
+    background: none;
+    box-shadow: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+h1 span a:hover,
+h1 span a:focus {background: none;}
+
+section#landing-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.blur {
+    height: auto;
+    width: fit-content;
+    width: -moz-fit-content;
+    padding: 50px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.30);
+    backdrop-filter: blur(3px);
+    background-color: rgba(0,0,0,0.2);
+}
+
+.blur h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    font-family: "IBM-bold";
+}
+
+.blur > * {
+    color: white;
+    text-align: left;
+    max-width: 500px;
+    font-size: 1.5rem;
+}
+
+.blur a {
+    padding: 10px 20px;
+    margin-top: 30px;
+    display: block;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    margin-left: auto;
+    width: fit-content;
+    width: -moz-fit-content;
+    transition: all 300ms ease-in-out;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.30);
+}
+
+.blur a:hover,
+.blur a:active,
+.blur a:focus {
+    background-color: rgba(0,0,0,0.6);
+    box-shadow: none;
+}
+
+#card-diskon {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    min-height: auto !important;
+    margin: 0;
+}
+
+.card {
+    height: auto;
+    border-radius: 10px;
+    transition: all 300ms ease-in-out;
+    max-width: 700px;
+    width: 90vw;
+    background: #93d5ff;
+    margin: 30px 0;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: none;
+    border: none;
+    flex-direction: column;
+    background: #93d5ff;
+    
+}
+
+.card-body img {
+    max-height: 130px;
+    max-width: 130px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.card-body p {
+    display: flex;
+    align-items: baseline;
+    padding: 10px;
+    background: #ffffff;
+    color: #93d5ff;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.30);
+}
+
+.card-body .actual-harga {
+    text-decoration: line-through;
+    border-radius: 10px;
+    color: #93d5ff;
+}
+
+.card-body .diskon-harga {
+    font-family: 'IBM-Medium';
+    font-size: 3rem;
+    padding: 5px 10px;
+    margin: 0 10px;
+    color: #93d5ff;
+    border-radius: 10px;
+}
+
+.card-footer {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.link {
+    background-color: #1281c7;
+    padding: 10 15px;
+    border-radius: 10px;
+    color: white;
+    transition: 200ms ease-in-out;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin-left: auto;
+}
+.link:hover,
+.link:active,
+.link:focus {background-color: #014f80;}
+
+.card-footer p {font-size: 1rem; margin-bottom: 10px; color: #014f80; margin: 10px auto;}
+
+.card:hover,
+.card:active {box-shadow: none;}
+
+@media screen and (min-width: 600px) {
+    section {
+        align-items: center;
+        backdrop-filter: none;
+        background: transparent;
+        justify-content: center;
+    }
+
+    .blur { border-radius: 10px; }
+
+    .card {
+        margin: 20px auto;
+        background-color: #fff;
+        border: 1px solid black;
+        box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.30);
+    }
+
+    .card-body {
+        flex-direction: row;
+        background: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .card-body p {
+        padding: 0 10px;
+        background: #93d5ff;
+        color: white;
+        flex-direction: row;
+        align-items: center;
+        box-shadow: none;
+    }
+
+    .card-body .actual-harga,
+    .card-body .diskon-harga {
+        color: white;
+    }
+}

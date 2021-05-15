@@ -1,0 +1,75 @@
+.card-container .card-body img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    object-position: center;
+    margin-right: 10px;
+}
+
+.card-body {
+    height: 100%;
+}
+
+.card-price-title {
+    margin: 10px 10px 0 10px;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-price-title::after {
+    content: "";
+    border-bottom: 1px solid gray;
+    width: 100%;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.card-price-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 30px 0;
+}
+
+.price {
+    font-size: 3rem;
+    font-family: "IBM-Medium";
+    display: block;
+}
+
+.card-price-content p {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body ul {
+    margin: 10px;
+}
+
+.card-body ul::before {
+    content: "";
+    border-bottom: 1px solid gray;
+    width: 100%;
+    display: inline-block;
+}
+
+.card-body li {
+    margin: 10px;
+    text-align: center;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.title {
+    text-align: center;
+    margin: 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'IBM-Bold';
+}
+
+@media screen and (min-width: 400px) {
+    .card-container .card-body img {margin: 0;}
+    .price {display: inline;}
+}

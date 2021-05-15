@@ -117,7 +117,7 @@ CREATE TABLE `outlet` (
 INSERT INTO `outlet` (`id`, `nama`, `alamat`, `telp`) VALUES
 ('60573d69943b83.94134097', 'outlet 2', 'tokyo, japan', '00918281'),
 ('606d7bea9a15c2.96172541', 'outlet 4', 'bantul', '09182312'),
-('qwertyuiopa', 'outlet 1', 'Jalan Ngentak, Gendeng, Bangunjiwo, Kec. Kasihan, Bantul, Daerah Istimewa Yogyakarta 55184', '0928');
+('qwertyuiopa', 'outlet 1', 'jl jl', '0928');
 
 -- --------------------------------------------------------
 
@@ -231,11 +231,11 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `id_outlet`, `nama`, `telp`, `password`, `role`, `alamat`) VALUES
-('6052c89c8f79d7.99670672', 'qwertyuiopa', 'irvan hakim', '123', '$2y$12$JMRQz9swqN7lv1P5MwNUeOdlqTbUKIYV0CcDYYtHqok9kfGUPZPMe', 'admin', 'Shibuya, Japan.'),
-('60558af9625b04.86699993', 'qwertyuiopa', 'nani', '01923', '$2y$12$G7Z6Zg.1RjJXQFJ5YL2lseZlREblKdphRHmm7MXSp9Rx6EftyoMkO', 'kasir', 'bangunjiwo'),
+('6052c89c8f79d7.99670672', 'qwertyuiopa', 'koneko', '123', '$2y$12$JMRQz9swqN7lv1P5MwNUeOdlqTbUKIYV0CcDYYtHqok9kfGUPZPMe', 'admin', 'Shibuya, Japan.'),
+('60558af9625b04.86699993', 'qwertyuiopa', 'nani', '01923', '$2y$12$G7Z6Zg.1RjJXQFJ5YL2lseZlREblKdphRHmm7MXSp9Rx6EftyoMkO', 'kasir', 'bnlll'),
 ('606cfacfec2cf0.63270378', 'qwertyuiopa', 'bakunya123', '091237', '$2y$12$5TPpg7rCdT1BijzVplRC8eCaR1zivfeumk670QryAvgyxs3Hhq52e', 'admin', 'bantul'),
 ('606d01263efea3.65752737', 'qwertyuiopa', 'kasir', '098098', '$2y$12$NH.HnCBDf8pAs//c4B.G/u8zjENI2gEBjgl755JSx4zwaw2hBNWt6', 'kasir', 'bantul'),
-('609e4cb5caa1a5.77446821', 'qwertyuiopa', 'Hatsune Miku', '088806033610', '$2y$12$OQZXMExNzJPBm0moNmCMRev0q6X/nWjTofmEmxfaHK7QT4mxOQP0K', 'kasir', 'Tokyo'),
+('609e4cb5caa1a5.77446821', 'qwertyuiopa', 'Hatsune Miku', '09870000000', '$2y$12$OQZXMExNzJPBm0moNmCMRev0q6X/nWjTofmEmxfaHK7QT4mxOQP0K', 'kasir', 'Tokyo'),
 ('609fadb4baf398.80988497', NULL, 'kawaii-chan', '0888', '$2y$12$Kwrdq5/kBfi.Q1RwN8KGAOblzzP7cNbn6YtoF5pTBonsjNjEOXfK6', 'pelanggan', 'shibuya'),
 ('609fc9c7272453.81798879', 'qwertyuiopa', 'kasir', '234', '$2y$12$bHov8gW4vDqnMgrJsQHLYO7UrUI/DL1.H.oiMvaI96OLS.l0IVC9y', 'kasir', 'shibuya');
 
